@@ -61,7 +61,7 @@ export default {
 h3{
   padding: 18px;
 }
-#formaulario{
+#formulario{
   background: pink;
   height: 500px;
   width: 100%;
