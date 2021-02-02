@@ -1,23 +1,34 @@
 <template>
   
   <div id="app">
-    <img alt="Vue logo" src="\img\logo.png">
+    <img alt="Vue logo"  width="150" src="\img\logo.png">
     <slider/>
+    <contador/>
+    <productos/>
     <formulario/>
+    <footerLan/> 
   </div>
   
 </template>
 
 <script>
 import slider from './components/slider.vue'
+import contador from './components/contador.vue'
+import productos from './components/productos.vue'
 import formulario from './components/formulario.vue'
+import footerLan from './components/footerLan.vue'
+
 
 
 export default {
   name: 'App',
   components: {
     slider,
-    formulario, 
+    contador,
+    productos,
+    formulario,
+    footerLan
+     
   }
 }
 

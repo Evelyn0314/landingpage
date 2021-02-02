@@ -1,6 +1,6 @@
 <template>
   <div id="formulario">
-    <div class="container">
+    <div class="container-form">
       <h3>Contactanos</h3>
         <div class="form-row">
           <div class="form-group col-md-6">
@@ -53,7 +53,7 @@
 
 <script>
 export default {
-    name: "formulario",
+  name: "formulario",
 
 }
 </script>
@@ -63,7 +63,7 @@ h3{
 }
 #formulario{
   background: pink;
-  height: 500px;
+  height: 600px;
   width: 100%;
 }
 .container{

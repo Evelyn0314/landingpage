@@ -1,41 +1,54 @@
 <template>
-  <div id="slider">
-    
-    <b-container>
-        <b-carousel
-                controls
-                indicators
-                img-width="1024"
-                img-height="480"
-                :interval="3000"
-                v-model="slider"
-        >
-                <b-carousel-slide img-src="img\watch-navidad.jpg"
-                ></b-carousel-slide>
-                <b-carousel-slide img-src="img\watch-mujer.jpg">
-                    <h1>No te quedes sin tu smartwatch</h1>
-                </b-carousel-slide>
-                <b-carousel-slide img-src="img\navidad.jpg"></b-carousel-slide>
-            </b-carousel>
-    </b-container>
+  <div id="slider" class="container">
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide h-100"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="\img\navidad.jpg" alt="First slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="\img\oferta.jpg" alt="Second slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="\img\watch-mujer.png" alt="Third slide" />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   </div>
 </template>
 
 <script>
-
 export default {
-    name:'slider',
-     data () {
-    return {
-        slide: 3
-    }
-  },
-}
+  name: "slider",
+};
 </script>
-<style scoped>
-#slider{
-  background: red;
-  height: 200px;  
-}
-
-</style>
