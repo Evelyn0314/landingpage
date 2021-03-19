@@ -1,4 +1,6 @@
 # landingpage
+Una landingpage de Promoción Navideña creado con Vue
+Utilización de Bootstrap 
 
 ## Project setup
 ```
